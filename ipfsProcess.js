@@ -15,7 +15,7 @@ class StorageProcessesLauncher {
 
   killItWithFire() {
     console.dir(this.process);
-    this.process.send("test");
+    this.process.send("exit");
     //this.process.send("test");
     //this.process.disconnect();
   }

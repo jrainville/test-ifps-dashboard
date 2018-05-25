@@ -78,3 +78,4 @@ const storageProcess = new StorageProcessesLauncher();
 storageProcess.launchProcess(() => {
   console.log('GOodie');
 });
+
