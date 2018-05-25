@@ -1,0 +1,13 @@
+.idea
+
+.embark/
+node_modules/
+dist/
+chains.json
+
+TokenFactory/config/production/password
+TokenFactory/config/livenet/password
+embark_demo/config/production/password
+embark_demo/config/livenet/password
+VyperCoin/config/production/password
+VyperCoin/config/livenet/password
