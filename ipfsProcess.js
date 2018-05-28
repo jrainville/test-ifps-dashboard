@@ -9,11 +9,7 @@ class StorageProcessesLauncher {
   launchProcess(callback) {
     const self = this;
 
-    this.process = child_process.exec('ipfs daemon', {silent: true}, (err, _stdout, _stderr) => {
-      if (err) {
-        console.error(err);
-      }
-    });
+    this.process = child_process.spawn('ipfs', ['daemon']);
     this.process.stdout.on('data', (data) => {
       if (!self.readyCalled && data.indexOf('Daemon is ready') > -1) {
         self.readyCalled = true;
