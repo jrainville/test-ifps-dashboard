@@ -1,6 +1,4 @@
-// const fs = require('../../core/fs');
-// const utils = require('../../utils/utils');
-// const ProcessLauncher = require('../../process/processLauncher');
+
 const child_process = require('child_process');
 
 class StorageProcessesLauncher {
@@ -45,4 +43,14 @@ class StorageProcessesLauncher {
   }
 }
 
-module.exports = StorageProcessesLauncher;
+const paapte = new StorageProcessesLauncher();
+paapte.launchProcess(() => {
+  console.log('blargh');
+
+  setTimeout(()=> {
+    console.log('BYEBYE');
+    process.exit();
+  }, 3000);
+});
+
+//module.exports = StorageProcessesLauncher;
