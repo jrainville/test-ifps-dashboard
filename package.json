@@ -4,7 +4,8 @@
   "description": "",
   "main": "dashboard.js",
   "dependencies": {
-    "blessed": "^0.1.81"
+    "blessed": "^0.1.81",
+    "shelljs": "^0.8.2"
   },
   "devDependencies": {},
   "scripts": {
