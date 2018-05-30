@@ -9,12 +9,11 @@ class StorageProcessesLauncher {
   launchProcess(callback) {
     const self = this;
 
-    this.process = require('child_process').fork(path.join(__dirname, '/run.js'));
-    console.dir(this.process);
+    this.process = child_process.fork(path.join(__dirname, '/run.js'));
   }
 
   killItWithFire() {
-    console.dir(this.process);
+    console.dir('Killing the process');
     this.process.send("exit");
     //this.process.send("test");
     //this.process.disconnect();
